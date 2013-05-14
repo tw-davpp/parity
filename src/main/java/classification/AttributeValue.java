@@ -25,19 +25,15 @@ public class AttributeValue {
     @Override
     public boolean equals(Object obj) {
         final AttributeValue other = (AttributeValue) obj;
-
         if (obj == null) {
             return false;
         }
-
         if (getClass() != obj.getClass()) {
             return false;
         }
-
         if (this == obj) {
             return true;
         }
-
         if (value == null) {
             if (other.value != null) {
                 return false;
@@ -50,6 +46,6 @@ public class AttributeValue {
 
     @Override
     public String toString() {
-        return "Attribute value: "+value+" was found "+count+"times";
+        return "Attribute value: " + value + " was found " + count + "times";
     }
 }

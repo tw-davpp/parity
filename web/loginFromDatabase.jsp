@@ -1,7 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="java.sql.Connection" %>
-<%@ page import="java.sql.PreparedStatement" %>
-<%@ page import="java.sql.DriverManager" %>
+<%@ page import="java.sql.*" %>
 <html>
 <head>
     <title>parity</title>
@@ -24,17 +22,25 @@
 
     Connection connection = DriverManager.getConnection(url, user, pass);
 
-    String sql = "insert into user value(null,?,?)";
-
     String name = (String) request.getParameter("name");
     String password = (String) request.getParameter("password");
+    String sql = "select * from user where name='" + name + "'";
+
+    Statement statement = connection.createStatement();
+    ResultSet resultSet = statement.executeQuery(sql);
+
     try {
-        PreparedStatement preparedStatement = connection.prepareStatement(sql);
-
-        preparedStatement.setString(1, name);
-        preparedStatement.setString(2, password);
-
-        preparedStatement.executeUpdate();
+        if (resultSet.next()) {
+            if (password.equals(resultSet.getString("password"))) {
+                session.setAttribute("user", name);
+%>
+<jsp:forward page="index.jsp">
+    <jsp:param name="user" value="<%=name%>"/>
+</jsp:forward>
+<%
+            } else
+                session.setAttribute("user", null);
+        }
     } catch (StringIndexOutOfBoundsException e) {
         System.out.println();
     }

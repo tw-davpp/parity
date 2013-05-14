@@ -15,7 +15,7 @@
 <div class="search">
     <h1 class="title" style="text-align: center">Parity Login</h1>
 
-    <form class="register" action="registerToDatabase.jsp" method="post" style="text-align: center">
+    <form class="register" action="loginFromDatabase.jsp" method="post" style="text-align: center">
         <label>User Name:</label>
         <input name="name" class="input" type="text" size="20"/>
         <br/>

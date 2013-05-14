@@ -1,16 +1,9 @@
 package classification;
 
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-
-/**
- * This class captures a user click.
- *
- * @author babis
- */
 public class UserClick extends BaseInstance {
 
     UserQuery userQuery;

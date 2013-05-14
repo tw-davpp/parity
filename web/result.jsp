@@ -26,7 +26,15 @@
     </script>
 </head>
 <body>
-
+<div class="header">
+    <label class="user">
+        <%
+            String user = (String) session.getAttribute("user");
+            if (user != null)
+        %>
+        User:<%=user%>
+    </label>
+</div>
 
 <form class="search-box">
     <label><h1 class="title">Parity</h1></label>

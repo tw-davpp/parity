@@ -10,12 +10,22 @@
     <link rel="stylesheet" href="views/css/main.css">
 </head>
 <body>
+<div class="header">
+    <label class="user">
+        <%
+            String user = (String) session.getAttribute("user");
+            if (user != null)
+        %>
+        User:<%=user%>
+    </label>
+</div>
+
 <div class="search">
     <h1 class="title" style="text-align: center">Parity</h1>
 
     <form action="result.jsp" method="post" style="text-align: center">
         <div class="input-table">
-            <input name="input" class="input" type="text" size="50" />
+            <input name="input" class="input" type="text" size="50"/>
         </div>
         <div class="submit">
             <button id="button">search</button>

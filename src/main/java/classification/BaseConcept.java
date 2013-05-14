@@ -54,15 +54,12 @@ public class BaseConcept implements Concept {
     @Override
     public boolean equals(Object obj) {
         final BaseConcept other = (BaseConcept) obj;
-
         if (this == obj) {
             return true;
         }
-
         if (!(obj instanceof BaseConcept)) {
             return false;
         }
-
         if (name == null) {
             if (other.name != null) {
                 return false;
@@ -70,7 +67,6 @@ public class BaseConcept implements Concept {
         } else if (!name.equals(other.name)) {
             return false;
         }
-
         if (parent == null) {
             if (other.parent != null) {
                 return false;
@@ -78,7 +74,6 @@ public class BaseConcept implements Concept {
         } else if (!parent.equals(other.parent)) {
             return false;
         }
-
         return true;
     }
 }

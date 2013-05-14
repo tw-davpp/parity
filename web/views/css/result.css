@@ -9,6 +9,7 @@ label {
 .search-box {
     position: relative;
     text-align: center;
+    margin: 5%;
 }
 
 .product {
