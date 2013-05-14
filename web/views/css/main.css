@@ -1,0 +1,31 @@
+body {
+    background: #f7f7f7;
+}
+
+.search {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.title {
+    font-family: Arial, Verdana, Sans-serif;
+    font-size: 40px;
+    color: #00bfff;
+}
+
+.input-table {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.input {
+    font-size: 25px;
+    height: 35px;
+}
+
+.submit {
+    margin: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}

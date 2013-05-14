@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sites>
+    <site name="amazon">
+        <urls>
+            <url></url>
+        </urls>
+        <products>
+            <layout xpath="//div[contains(@id,'atfResults')]"/>
+            <layout xpath="//div[contains(@id,'btfResults')]"/>
+        </products>
+        <productinfo>
+            <product xpath="h3[contains(@class,'newaps')]/a" type="title"/>
+            <product xpath="div/a/img" source="src" type="img"/>
+            <product xpath="ul/li" type="price"/>
+            <product xpath="ul/li/span/a/img" text="alt" type="score"/>
+        </productinfo>
+        <nextPage text="下一页"/>
+    </site>
+</sites>

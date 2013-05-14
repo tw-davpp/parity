@@ -1,0 +1,40 @@
+label {
+    display: inline-block;
+}
+
+.title {
+    margin: 25px;
+}
+
+.search-box {
+    position: relative;
+    text-align: center;
+}
+
+.product {
+    width: 20%;
+    float: left;
+
+}
+
+.name {
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.image {
+    margin-left: 20%;
+}
+
+.price {
+    margin: 0;
+    text-align: center;
+    color: #b22222;
+}
+
+.product-button {
+    width: 20%;
+    float: left;
+}
