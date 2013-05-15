@@ -12,23 +12,14 @@ public class StringAttribute implements Attribute {
         this.value = value;
     }
 
-    /* (non-Javadoc)
-     * @see iweb2.ch2.data.Attribute#getName()
-     */
     public String getName() {
         return name;
     }
 
-    /* (non-Javadoc)
-     * @see iweb2.ch2.data.Attribute#getValue()
-     */
     public Object getValue() {
         return value;
     }
 
-    /**
-     * @param value the value to set
-     */
     public void setValue(String value) {
         this.value = value;
     }

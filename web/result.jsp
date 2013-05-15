@@ -2,8 +2,16 @@
 <%@ page import="lucene.*" %>
 <%@ page import="java.util.List" %>
 <%@ page import="database.*" %>
+<%@ page import="java.sql.Connection" %>
+<%@ page import="java.sql.PreparedStatement" %>
+<%@ page import="java.sql.SQLException" %>
 
-<% int clicks = 0; %>
+<%
+    request.setCharacterEncoding("utf-8");
+
+    String user = (String) session.getAttribute("user");
+    String input = (String) request.getParameter("input");
+%>
 <html>
 <head>
     <title>Result</title>
@@ -11,16 +19,19 @@
     <script src="views/js/jquery-1.9.1.min.js"></script>
     <script src="views/js/jquery-ui-1.10.3.custom.min.js"></script>
 
-    <script type="text/javascript" src="views/js/result.js"></script>
     <link rel="stylesheet" href="views/css/main.css">
     <link rel="stylesheet" href="views/css/result.css">
 
     <script type="text/javascript">
         $(function () {
-            var clicks = <%=clicks%>;
-            $(".link").bind("click", function () {
-                clicks++;
-                alert(clicks);
+            $("#button").button();
+            $(document).tooltip();
+
+            $(".image").bind("click", function () {
+                document.getElementById("input").value = "<%=input%>";
+                document.getElementById("url").value = $(this).attr("link");
+                var formId = document.getElementById("click");
+                formId.submit();
             });
         });
     </script>
@@ -28,10 +39,6 @@
 <body>
 <div class="header">
     <label class="user">
-        <%
-            String user = (String) session.getAttribute("user");
-            if (user != null)
-        %>
         User:<%=user%>
     </label>
 </div>
@@ -51,26 +58,31 @@
 </form>
 
 <%
-    request.setCharacterEncoding("utf-8");
-    String input = (String)request.getParameter("input");
     Search search = new Search();
-    List<Product> products = search.search(input);
+    List<Product> products = search.searchWithNaiveBayes(input);
     for (Product product : products) {
 %>
-
 <div class="product">
-    <a class="link" href=<%=product.url%> >
-        <img class="image" src="img/<%=product.id%>.jpg"
-             title="<%=product.title%>" style style="text-align: center"/>
-    </a>
+    <img class="image" src="img/<%=product.id%>.jpg" link="<%=product.url%>"
+         title="<%=product.title%>" style style="text-align: center"/>
 
-    <p class="name"><%=product.title%></p>
-    <p class="price">origin:￥<%=product.originPrice%></p>
-    <p class="price">new:￥<%=product.currentPrice%></p>
+
+    <p class="name"><%=product.title%>
+    </p>
+
+    <p class="price">origin:￥<%=product.originPrice%>
+    </p>
+
+    <p class="price">new:￥<%=product.currentPrice%>
+    </p>
 </div>
 <%
     }
 %>
 
+<form id="click" method="post" action="saveClick.jsp">
+    <input id="input" type="hidden" name="input">
+    <input id="url" type="hidden" name="url">
+</form>
 </body>
 </html>

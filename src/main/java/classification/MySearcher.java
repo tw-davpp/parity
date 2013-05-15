@@ -9,10 +9,7 @@ import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.queryParser.ParseException;
 import org.apache.lucene.queryParser.QueryParser;
-import org.apache.lucene.search.IndexSearcher;
-import org.apache.lucene.search.Query;
-import org.apache.lucene.search.ScoreDoc;
-import org.apache.lucene.search.TopDocs;
+import org.apache.lucene.search.*;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.Version;
 
@@ -33,7 +30,7 @@ public class MySearcher {
         learner = naiveBayes;
     }
 
-    public SearchResult[] search(String query, int numberOfMatches) {
+    public SearchResult[] search(String queryStr, int numberOfMatches) {
         SearchResult[] docResults = new SearchResult[0];
 
         IndexSearcher searcher = null;
@@ -43,18 +40,21 @@ public class MySearcher {
             System.out.println("ERROR: " + ioX.getMessage());
         }
 
-        QueryParser qp = new QueryParser(Version.LUCENE_30, "content", new StandardAnalyzer(Version.LUCENE_30));
+        QueryParser queryParser = new QueryParser(Version.LUCENE_30, "title", new StandardAnalyzer(Version.LUCENE_30));
 
-        Query q = null;
+        Query query = null;
         try {
-            q = qp.parse(query);
+            query = queryParser.parse(queryStr);
         } catch (ParseException pX) {
             System.out.println("ERROR: " + pX.getMessage());
         }
 
+        SortField currentPriceField = new SortField("currentPrice", SortField.FLOAT, false);
+        SortField scoreField = new SortField("score", SortField.FLOAT, true);
+        Sort sort = new Sort(new SortField[]{currentPriceField, scoreField});
         TopDocs docs = null;
         try {
-            docs = searcher.search(q, numberOfMatches);
+            docs = searcher.search(query, numberOfMatches);
 
             int hits = docs.totalHits;
             docResults = new SearchResult[hits];
@@ -62,10 +62,12 @@ public class MySearcher {
             ScoreDoc[] scoreDoc = docs.scoreDocs;
             for (int i = 0; i < hits; i++) {
                 Document document = searcher.doc(scoreDoc[i].doc);
-                docResults[i] = new SearchResult(document.get("docid"),
-                        document.get("doctype"),
+                docResults[i] = new SearchResult(document.get("id"),
                         document.get("title"),
                         document.get("url"),
+                        document.get("originPrice"),
+                        document.get("currentPrice"),
+                        document.get("score"),
                         scoreDoc[i].score);
             }
 
@@ -76,7 +78,7 @@ public class MySearcher {
 
         String header = "Search results using Lucene index scores:";
         boolean showTitle = true;
-        printResults(header, "Query: " + query, docResults, showTitle);
+        printResults(header, "Query: " + queryStr, docResults, showTitle);
 
         return docResults;
     }
@@ -122,7 +124,7 @@ public class MySearcher {
 
         String header = "Search results using combined Lucene scores, " +
                 "user clicks:";
-        String query = "Query: user=" + uQuery.getUid() + ", query text=" + uQuery.getQuery();
+        String query = "Query: user=" + uQuery.getUserId() + ", query text=" + uQuery.getQuery();
         boolean showTitle = false;
         printResults(header, query, docResults, showTitle);
 

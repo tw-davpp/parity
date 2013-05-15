@@ -85,7 +85,6 @@ public class BaseInstance implements Instance {
      * Pretty print the information for this Instance
      */
     public void print() {
-
         if (attributes != null) {
             for (Attribute a : attributes) {
 
@@ -159,9 +158,9 @@ public class BaseInstance implements Instance {
         Attribute matchedAttribute = null;
 
         if (attributes != null) {
-            for (Attribute a : attributes) {
-                if (attrName.equalsIgnoreCase(a.getName())) {
-                    matchedAttribute = a;
+            for (Attribute attribute : attributes) {
+                if (attrName.equalsIgnoreCase(attribute.getName())) {
+                    matchedAttribute = attribute;
                     break;
                 }
             }

@@ -17,23 +17,22 @@ import org.apache.lucene.util.Version;
  */
 public class UserQuery {
 
-    private String uid;
+    private String userId;
     private String query;
     private String[] queryTerms;
 
-    public UserQuery(String uid, String q) throws IOException {
+    public UserQuery(String userId, String queryStr) throws IOException {
+        setUserId(userId);
+        setQuery(queryStr);
 
-        setUid(uid);
-        setQuery(q);
-
-        ArrayList<String> qTerms = new ArrayList<String>();
+        ArrayList<String> queryTerms = new ArrayList<String>();
         StandardAnalyzer analyzer = new StandardAnalyzer(Version.LUCENE_30);
 
-        TokenStream stream = analyzer.tokenStream("query", new StringReader(q));
+        TokenStream stream = analyzer.tokenStream("query", new StringReader(queryStr));
 
         TermAttribute term = stream.addAttribute(TermAttribute.class);
         while (stream.incrementToken()) {
-            qTerms.add(new String(term.term()));
+            queryTerms.add(new String(term.term()));
         }
 
         /*
@@ -44,20 +43,20 @@ public class UserQuery {
             if (token == null) {
                 hasTokens = false;
             } else {
-                qTerms.add(new String(token.termBuffer(), 0, token.termLength()));
+                queryTerms.add(new String(token.termBuffer(), 0, token.termLength()));
             }
         }
         */
 
-        queryTerms = qTerms.toArray(new String[qTerms.size()]);
+        this.queryTerms = queryTerms.toArray(new String[queryTerms.size()]);
     }
 
-    public String getUid() {
-        return uid;
+    public String getUserId() {
+        return userId;
     }
 
-    public void setUid(String uid) {
-        this.uid = uid;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     public String getQuery() {
@@ -87,7 +86,7 @@ public class UserQuery {
         int result = 1;
         result = prime * result + ((query == null) ? 0 : query.hashCode());
         result = prime * result + Arrays.hashCode(queryTerms);
-        result = prime * result + ((uid == null) ? 0 : uid.hashCode());
+        result = prime * result + ((userId == null) ? 0 : userId.hashCode());
         return result;
     }
 
@@ -107,10 +106,10 @@ public class UserQuery {
             return false;
         if (!Arrays.equals(queryTerms, other.queryTerms))
             return false;
-        if (uid == null) {
-            if (other.uid != null)
+        if (userId == null) {
+            if (other.userId != null)
                 return false;
-        } else if (!uid.equals(other.uid))
+        } else if (!userId.equals(other.userId))
             return false;
         return true;
     }

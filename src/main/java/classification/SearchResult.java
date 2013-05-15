@@ -7,27 +7,31 @@ import java.util.List;
 
 public class SearchResult {
 
-    private String docId;
-    private String docType;
+    private String id;
+    private String originPrice;
+    private String currentPrice;
     private String title;
     private String url;
+    private String productScore;
 
     private double score;
 
-    public SearchResult(String docId, String docType, String title, String url, double score) {
-        this.docId = docId;
-        this.docType = docType;
+    public SearchResult(String id, String title, String url, String originPrice,String currentPrice, String productScore, double score) {
+        this.id = id;
         this.title = title;
         this.url = url;
+        this.originPrice = originPrice;
+        this.currentPrice = currentPrice;
+        this.productScore = productScore;
         this.score = score;
     }
 
-    public String getDocId() {
-        return docId;
+    public String getId() {
+        return id;
     }
 
-    public void setDocId(String docId) {
-        this.docId = docId;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getUrl() {
@@ -54,19 +58,10 @@ public class SearchResult {
         this.title = title;
     }
 
-    public String getDocType() {
-        return docType;
-    }
-
-    public void setDocType(String docType) {
-        this.docType = docType;
-    }
-
 
     public String print() {
         StringBuilder strB = new StringBuilder();
-//		strB.append("Document ID    : ").append(docId).append("\n");
-        strB.append("Document Type: ").append(docType).append("\n");
+        strB.append("Document ID    : ").append(id).append("\n");
         strB.append("Document Title : ").append(title).append("\n");
         strB.append("Document URL: ").append(url).append("  -->  ");
         strB.append("Relevance Score: ").append(score).append("\n");
@@ -111,5 +106,29 @@ public class SearchResult {
                 return result;
             }
         });
+    }
+
+    public String getOriginPrice() {
+        return originPrice;
+    }
+
+    public void setOriginPrice(String originPrice) {
+        this.originPrice = originPrice;
+    }
+
+    public String getCurrentPrice() {
+        return currentPrice;
+    }
+
+    public void setCurrentPrice(String currentPrice) {
+        this.currentPrice = currentPrice;
+    }
+
+    public String getProductScore() {
+        return productScore;
+    }
+
+    public void setProductScore(String productScore) {
+        this.productScore = productScore;
     }
 }

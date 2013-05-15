@@ -1,5 +1,6 @@
 package lucene;
 
+import classification.*;
 import database.Product;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
@@ -21,6 +22,35 @@ public class Search {
     public Search() throws IOException {
         Directory dir = FSDirectory.open(new File("./index"));
         searcher = new IndexSearcher(dir);
+    }
+
+    public List<Product> searchWithNaiveBayes(String queryStr) throws IOException {
+        MySearcher searcher = new MySearcher("./index");
+        UserClick userClick = new UserClick();
+        UserClick[] clicks = userClick.load();
+        TrainingSet trainingSet = new TrainingSet(clicks);
+        NaiveBayes naiveBayes = new NaiveBayes("Naive Bayes", trainingSet);
+        naiveBayes.trainOnAttribute("Username");
+        naiveBayes.trainOnAttribute("QueryTerm_1");
+        naiveBayes.trainOnAttribute("QueryTerm_2");
+        naiveBayes.train();
+        searcher.setUserLearner(naiveBayes);
+        UserQuery davppQuery = new UserQuery("davpp", queryStr);
+        SearchResult[] results = searcher.search(davppQuery, 1000);
+
+        List<Product> result = new ArrayList<Product>();
+        for (SearchResult searchResult : results) {
+            Product product = new Product(
+                    Integer.parseInt(searchResult.getId()),
+                    searchResult.getTitle(),
+                    searchResult.getUrl(),
+                    searchResult.getOriginPrice(),
+                    searchResult.getCurrentPrice(),
+                    searchResult.getProductScore()
+            );
+            result.add(product);
+        }
+        return result;
     }
 
     public List<Product> search(String queryStr) throws ParseException, IOException {

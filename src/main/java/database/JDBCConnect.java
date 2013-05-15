@@ -2,6 +2,7 @@ package database;
 
 import util.PropertiesUtils;
 
+import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -12,6 +13,9 @@ public class JDBCConnect {
     private static final String DRIVER = "com.mysql.jdbc.Driver";
     private static Connection connection;
     private static JDBCConnect jdbcConnect = null;
+    private static String url = "jdbc:mysql://127.0.0.1:3306/crawler?useUnicode=true&characterEncoding=utf8";
+    private static String user = "root";
+    private static String password = "cn123456";
 
     public static JDBCConnect getInstance() {
         if (jdbcConnect == null) {
@@ -29,10 +33,13 @@ public class JDBCConnect {
     }
 
     private static void init() {
-        Properties config = PropertiesUtils.getProperties(DATABASE_PROPERTIES);
-        String url = config.getProperty("mysql.url");
-        String user = config.getProperty("mysql.user");
-        String password = config.getProperty("mysql.password");
+        File file = new File(DATABASE_PROPERTIES);
+        if (file.exists()) {
+            Properties config = PropertiesUtils.getProperties(DATABASE_PROPERTIES);
+            url = config.getProperty("mysql.url");
+            user = config.getProperty("mysql.user");
+            password = config.getProperty("mysql.password");
+        }
 
         try {
             Class.forName(DRIVER);

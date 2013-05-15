@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.sql.Connection" %>
 <%@ page import="java.sql.PreparedStatement" %>
-<%@ page import="java.sql.DriverManager" %>
+<%@ page import="database.JDBCConnect" %>
 <html>
 <head>
     <title>parity</title>
@@ -16,13 +16,8 @@
 </head>
 <body>
 <%
-    String DRIVER = "com.mysql.jdbc.Driver";
-    Class.forName(DRIVER);
-    String url = "jdbc:mysql://127.0.0.1:3306/crawler?useUnicode=true&characterEncoding=utf8";
-    String user = "root";
-    String pass = "cn123456";
-
-    Connection connection = DriverManager.getConnection(url, user, pass);
+    JDBCConnect jdbcConnect = JDBCConnect.getInstance();
+    Connection connection = jdbcConnect.getConnection();
 
     String sql = "insert into user value(null,?,?)";
 

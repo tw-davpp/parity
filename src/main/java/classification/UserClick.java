@@ -1,7 +1,13 @@
 package classification;
 
+import database.JDBCConnect;
+
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 
 public class UserClick extends BaseInstance {
@@ -13,26 +19,24 @@ public class UserClick extends BaseInstance {
         super();
     }
 
-    public UserClick(UserQuery uQ, String url) {
+    public UserClick(UserQuery userQuery, String url) {
         super();
 
-        userQuery = uQ;
+        this.userQuery = userQuery;
         this.setConcept(new BaseConcept(url));
 
-        attributes = new StringAttribute[userQuery.getQueryTerms().length + 1];
-
-        attributes[0] = new StringAttribute("UserName", userQuery.getUid());
+        attributes = new StringAttribute[this.userQuery.getQueryTerms().length + 1];
+        attributes[0] = new StringAttribute("UserName", this.userQuery.getUserId());
 
         int j = 1;
-        for (String s : uQ.getQueryTerms()) {
-            attributes[j] = new StringAttribute("QueryTerm_" + j, s);
+        for (String query : userQuery.getQueryTerms()) {
+            attributes[j] = new StringAttribute("QueryTerm_" + j, query);
             j++;
         }
     }
 
     @Override
     public UserClick[] load(BufferedReader bR) throws IOException {
-
         ArrayList<UserClick> userClicks = new ArrayList<UserClick>();
 
         String line;
@@ -54,6 +58,35 @@ public class UserClick extends BaseInstance {
         return userClicks.toArray(new UserClick[userClicks.size()]);
     }
 
+    public UserClick[] load() {
+        ArrayList<UserClick> userClicks = new ArrayList<UserClick>();
+
+        JDBCConnect jdbcConnect = JDBCConnect.getInstance();
+        Connection connection = jdbcConnect.getConnection();
+
+        String sql = "select * from click";
+
+        try {
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(sql);
+
+            while (resultSet.next()) {
+                String user = resultSet.getString("user");
+                String queryStr = resultSet.getString("query");
+                String url = resultSet.getString("url");
+                UserQuery uQ = new UserQuery(user, queryStr);
+                UserClick userClick = new UserClick(uQ, url.substring(1, url.length() - 1));
+                userClick.print();
+                userClicks.add(userClick);
+            }
+            resultSet.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return userClicks.toArray(new UserClick[userClicks.size()]);
+    }
 
     @Override
     public int hashCode() {

@@ -8,17 +8,26 @@
     <file path="/main.css" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368552555385" ignored="false" />
     <file path="/Jsp File.txt.ft" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368078566759" ignored="false" />
     <file path="/Jspx File.txt.ft" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368078571261" ignored="false" />
-    <file path="/result.jsp" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368532587790" ignored="false" />
+    <file path="/result.jsp" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368568091054" ignored="false" />
     <file path="/result.css" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368552769353" ignored="false" />
-    <file path="/Search.java" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368511397336" ignored="false" />
-    <file path="/a.dummy" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368518506389" ignored="false" />
+    <file path="/Search.java" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368567804440" ignored="false" />
+    <file path="/a.dummy" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368560166067" ignored="false" />
     <file path="/result.js" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368532077218" ignored="false" />
     <file path="/register.jsp" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368540737564" ignored="false" />
     <file path="/register.js" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368538707416" ignored="false" />
     <file path="/register.css" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368539813470" ignored="false" />
-    <file path="/registerToDatabase.jsp" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368542414434" ignored="false" />
+    <file path="/registerToDatabase.jsp" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368557258305" ignored="false" />
     <file path="/login.jsp" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368544203476" ignored="false" />
-    <file path="/loginFromDatabase.jsp" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368551874556" ignored="false" />
+    <file path="/loginFromDatabase.jsp" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368557175672" ignored="false" />
+    <file path="/JDBCConnect.java" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368557119025" ignored="false" />
+    <file path="/B.java" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368558588922" ignored="false" />
+    <file path="/A.java" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368558624602" ignored="false" />
+    <file path="/UserQuery.java" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368558909244" ignored="false" />
+    <file path="/UserClick.java" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368559845467" ignored="false" />
+    <file path="/saveClick.jsp" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368564956882" ignored="false" />
+    <file path="/SearchResult.java" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368567569508" ignored="false" />
+    <file path="/MySearcher.java" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368567872530" ignored="false" />
+    <file path="/NaiveBayesTest.java" changelist="d2d31b60-334f-40a7-b61a-02b34ae616c0" time="1368566675962" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +42,51 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/classification/MySearcher.java" line="87" class="classification.MySearcher" package="classification">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/classification/MySearcher.java" line="109" class="classification.MySearcher" package="classification">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/classification/MySearcher.java" line="61" class="classification.MySearcher" package="classification">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -67,26 +121,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <method_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/classification/UserClick.java" line="93" class="classification.UserClick" package="classification">
-        <option name="WATCH_ENTRY" value="true" />
-        <option name="WATCH_EXIT" value="true" />
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </method_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -96,11 +130,96 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BaseInstance.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/classification/BaseInstance.java">
+      <file leaf-file-name="UserClick.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/classification/UserClick.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="15" selection-start="318" selection-end="318" vertical-scroll-proportion="0.29180887">
+            <state line="33" column="62" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="result.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/result.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="48" selection-start="1636" selection-end="1636" vertical-scroll-proportion="-12.857142">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/lucene/SearchTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="44" selection-start="980" selection-end="980" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="saveClick.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/saveClick.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="31" selection-start="487" selection-end="487" vertical-scroll-proportion="-8.142858">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MySearcher.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/classification/MySearcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="63" selection-start="1946" selection-end="1946" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Index.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lucene/Index.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="66" selection-start="2066" selection-end="2078" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Search.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lucene/Search.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="30" selection-start="2534" selection-end="2534" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#1530#1539#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchResult.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/classification/SearchResult.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="18" selection-start="992" selection-end="992" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NaiveBayes.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/classification/NaiveBayes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="0" selection-start="1429" selection-end="1429" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NaiveBayesTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/classification/NaiveBayesTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="46" selection-start="506" selection-end="506" vertical-scroll-proportion="1.3258427">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,22 +234,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/web/views/js/result.js" />
-        <option value="$PROJECT_DIR$/web/views/js/register.js" />
-        <option value="$PROJECT_DIR$/web/views/css/register.css" />
-        <option value="$PROJECT_DIR$/src/main/java/lucene/Search.java" />
-        <option value="$PROJECT_DIR$/web/register.jsp" />
-        <option value="$PROJECT_DIR$/web/login.jsp" />
-        <option value="$PROJECT_DIR$/web/registerToDatabase.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/classification/UserClick.java" />
         <option value="$PROJECT_DIR$/web/loginFromDatabase.jsp" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/registerToDatabase.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/classification/TrainingSet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/classification/BaseInstance.java" />
+        <option value="$PROJECT_DIR$/src/main/java/classification/StringAttribute.java" />
+        <option value="$PROJECT_DIR$/src/test/java/lucene/B.java" />
+        <option value="$PROJECT_DIR$/src/test/java/lucene/A.java" />
+        <option value="$PROJECT_DIR$/src/main/java/classification/UserQuery.java" />
+        <option value="$PROJECT_DIR$/src/main/java/classification/UserClick.java" />
+        <option value="$PROJECT_DIR$/web/views/js/result.js" />
+        <option value="$PROJECT_DIR$/src/test/java/classification/NaiveBayesTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/classification/SearchResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lucene/Search.java" />
+        <option value="$PROJECT_DIR$/web/saveClick.jsp" />
         <option value="$PROJECT_DIR$/web/result.jsp" />
-        <option value="$PROJECT_DIR$/web/views/css/main.css" />
-        <option value="$PROJECT_DIR$/web/views/css/result.css" />
-        <option value="$PROJECT_DIR$/src/main/java/classification/AttributeValue.java" />
-        <option value="$PROJECT_DIR$/src/main/java/classification/BaseConcept.java" />
+        <option value="$PROJECT_DIR$/src/main/java/classification/MySearcher.java" />
       </list>
     </option>
   </component>
@@ -181,9 +300,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="24" />
-    <option name="width" value="1366" />
-    <option name="height" value="744" />
+    <option name="x" value="-1" />
+    <option name="y" value="-4" />
+    <option name="width" value="1368" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -236,6 +356,9 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Tests" />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -327,6 +450,114 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lucene" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classification" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -473,10 +704,6 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -520,9 +747,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Tests" />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -539,9 +763,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -556,7 +780,7 @@
       <recent name="$PROJECT_DIR$/web/WEB-INF" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat">
+  <component name="RunManager" selected="JUnit.NaiveBayesTest.test_naive_bayes">
     <configuration default="false" name="SearchTest.test_search" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -585,6 +809,62 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="A" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="lucene.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="lucene.A" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="parity" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="NaiveBayesTest.test_naive_bayes" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="classification.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="parity" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="classification" />
+      <option name="MAIN_CLASS_NAME" value="classification.NaiveBayesTest" />
+      <option name="METHOD_NAME" value="test_naive_bayes" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -597,6 +877,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -625,19 +918,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -823,13 +1103,17 @@
         </option>
       </method>
     </configuration>
-    <list size="2">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.SearchTest.test_search" />
+      <item index="2" class="java.lang.String" itemvalue="Application.A" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.NaiveBayesTest.test_naive_bayes" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.SearchTest.test_search" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.NaiveBayesTest.test_naive_bayes" />
+        <item index="1" class="java.lang.String" itemvalue="Application.A" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SearchTest.test_search" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -865,7 +1149,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
+    <frame x="-1" y="-4" width="1368" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -874,7 +1158,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4496" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.49772727" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -886,8 +1170,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3348485" sideWeight="0.672" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.672" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.4969697" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.36" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.64" sideWeight="0.4969697" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -955,132 +1239,119 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database.properties">
+    <entry file="file://$PROJECT_DIR$/web/views/js/result.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="101" selection-end="101" vertical-scroll-proportion="0.063439064">
+        <state line="3" column="34" selection-start="73" selection-end="73" vertical-scroll-proportion="0.098615915">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/ProductInfoStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="57" selection-start="190" selection-end="190" vertical-scroll-proportion="0.1522124">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/3.0.3/lucene-core-3.0.3.jar!/org/apache/lucene/document/Document.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="34" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.34814814">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="49" selection-start="542" selection-end="542" vertical-scroll-proportion="0.5380531">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/classification/UserQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="38" selection-start="676" selection-end="676" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/classification/UserClick.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="39" selection-start="159" selection-end="159" vertical-scroll-proportion="0.16211604">
+        <state line="33" column="62" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lucene/Search.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="30" selection-start="2534" selection-end="2534" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="method#hashCode#0;class#UserClick#0" expanded="false" />
-            <element signature="method#equals#0;class#UserClick#0" expanded="false" />
-            <element signature="method#getUrl#0;class#UserClick#0" expanded="false" />
-            <element signature="method#getUserQuery#0;class#UserClick#0" expanded="false" />
+            <element signature="e#1530#1539#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/css/register.css">
+    <entry file="file://$PROJECT_DIR$/web/saveClick.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/js/result.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="29" selection-start="186" selection-end="186" vertical-scroll-proportion="0.2854758">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="13" selection-start="724" selection-end="724" vertical-scroll-proportion="0.0">
+        <state line="12" column="31" selection-start="487" selection-end="487" vertical-scroll-proportion="-8.142858">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/result.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="6" selection-start="1079" selection-end="1079" vertical-scroll-proportion="-6.464286">
+        <state line="53" column="48" selection-start="1636" selection-end="1636" vertical-scroll-proportion="-12.857142">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/css/result.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/classification/NaiveBayes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="12" selection-start="172" selection-end="172" vertical-scroll-proportion="0.47579297">
+        <state line="47" column="0" selection-start="1429" selection-end="1429" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lucene/Index.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="446" selection-end="651" vertical-scroll-proportion="0.19964974">
+        <state line="53" column="66" selection-start="2066" selection-end="2078" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/loginFromDatabase.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/classification/SearchResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="42" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.5788531">
+        <state line="44" column="18" selection-start="992" selection-end="992" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/classification/Attribute.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/lucene/SearchTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="42" selection-end="42" vertical-scroll-proportion="0.063439064">
+        <state line="22" column="44" selection-start="980" selection-end="980" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/classification/AttributeValue.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/classification/MySearcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="202" selection-end="202" vertical-scroll-proportion="0.37562606">
+        <state line="56" column="63" selection-start="1946" selection-end="1946" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/classification/NaiveBayesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="46" selection-start="506" selection-end="506" vertical-scroll-proportion="1.3258427">
           <folding>
-            <element signature="method#getValue#0;class#AttributeValue#0" expanded="false" />
-            <element signature="method#getCount#0;class#AttributeValue#0" expanded="false" />
-            <element signature="method#equals#0;class#AttributeValue#0" expanded="false" />
-            <element signature="method#toString#0;class#AttributeValue#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/classification/BaseConcept.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="10" selection-start="1851" selection-end="1851" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="method#getName#0;class#BaseConcept#0" expanded="false" />
-            <element signature="method#getParent#0;class#BaseConcept#0" expanded="false" />
-            <element signature="method#setParent#0;class#BaseConcept#0" expanded="false" />
-            <element signature="method#toString#0;class#BaseConcept#0" expanded="false" />
-            <element signature="method#hashCode#0;class#BaseConcept#0" expanded="false" />
-            <element signature="method#equals#0;class#BaseConcept#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/amazon.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/classification/BaseInstance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="15" selection-start="318" selection-end="318" vertical-scroll-proportion="0.29180887">
-          <folding />
         </state>
       </provider>
     </entry>
